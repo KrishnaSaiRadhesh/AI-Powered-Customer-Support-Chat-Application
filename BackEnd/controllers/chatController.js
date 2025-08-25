@@ -26,7 +26,7 @@ async function sendMessage(req, res) {
     convo.messages.push({ sender: 'user', text: message, timestamp: new Date() });
 
     const faqs = await Faq.find({}, 'content embedding');
-    console.log(`FAQs fetched for session ${sessionId}:`, faqs.length, faqs.map(f => f.content.substring(0, 50)));
+   
 
     const botReply = await getBotResponse(message, convo.messages, faqs);
     convo.messages.push({ sender: 'bot', text: botReply, timestamp: new Date() });
