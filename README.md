@@ -1,4 +1,4 @@
-AI Customer Support Chat Platform
+<h1>AI Customer Support Chat Platform</h1>
 A simplified AI-powered customer support chat application built with a React frontend, Node.js/Express backend, MongoDB database, and integrated with the Gemini AI API for contextual responses. The platform allows users to interact with a virtual assistant, supports FAQ/company data uploads for contextual answers, and stores conversation history.
 Features
 
