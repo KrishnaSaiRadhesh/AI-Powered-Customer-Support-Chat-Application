@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 import ChatInterface from './components/ChatInterface';
 import AdminUpload from './components/AdminUpload';
+import './index.css'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
