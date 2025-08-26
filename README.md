@@ -145,50 +145,46 @@ git push
 
 Backend Deployment:
 
-Create a new Web Service on Render.
+-> Create a new Web Service on Render.
 
-Connect your GitHub repository.
+-> Connect your GitHub repository.
 
-Set the Root Directory:
+-> Set the Root Directory:
 
-Use . if index.js is in the repository root.
-Use backend if index.js is in a backend/ folder.
+-> Use . if index.js is in the repository root.
+-> Use backend if index.js is in a backend/ folder.
 
 
-Set Build Command: npm install
+-> Set Build Command: npm install
 
-Set Start Command: npm start
+-> Set Start Command: npm start
 
 Add environment variables in Render’s Environment settings:
-PORT=5000
-MONGODB_URI=<your-mongodb-atlas-uri>
-GEMINI_API_KEY=<your-gemini-api-key>
+-> PORT=5000
+-> MONGODB_URI=<your-mongodb-atlas-uri>
+-> GEMINI_API_KEY=<your-gemini-api-key>
 
 
-Deploy and check logs for Backend running on port 5000.
-
+Deploy and check logs for Backend running on port 3000.
 
 
 Frontend Deployment:
 
-Create another Web Service on Render.
+-> Create another Web Service on Render.
 
-Connect the same repository.
+-> Connect the same repository.
 
-Set Root Directory: frontend (if applicable).
+-> Set Root Directory: frontend (if applicable).
 
-Set Build Command: npm install && npm run build
+-> Set Build Command: npm install && npm run build
 
-Set Start Command: npm run preview (for Vite; adjust if using another setup).
+-> Set Start Command: npm run preview (for Vite; adjust if using another setup).
 
 Add environment variable:
-VITE_BACKEND_URL=<your-render-backend-url>/api/chat
+-> VITE_BACKEND_URL=<your-render-backend-url>/api/chat
 
-
-Replace <your-render-backend-url> with the Render URL for the backend service (e.g., https://your-app.onrender.com).
-
-
-Deploy and access the app at the provided Render URL.
+-> Replace <your-render-backend-url> with the Render URL for the backend service (e.g., https://your-app.onrender.com).
+-> Deploy and access the app at the provided Render URL.
 
 
 
@@ -204,7 +200,8 @@ Check Render logs for dependency or file path issues.
 
 
 
-Project Structure
+Project Structure:
+<p>
 ai-customer-support-chat/
 ├── backend/
 │   ├── config/
@@ -232,6 +229,7 @@ ai-customer-support-chat/
 │   ├── package.json
 │   ├── .env
 ├── README.md
+</p>
 
 Notes
 
