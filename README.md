@@ -201,8 +201,9 @@ Check Render logs for dependency or file path issues.
 
 
 Project Structure:
-<p>
-ai-customer-support-chat/
+<ul>
+  <li>ai-customer-support-chat/</li>
+</ul>
 ├── backend/
 │   ├── config/
 │   │   ├── db.js
