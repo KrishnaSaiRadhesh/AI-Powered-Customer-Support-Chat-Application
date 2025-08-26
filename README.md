@@ -203,34 +203,33 @@ Check Render logs for dependency or file path issues.
 Project Structure:
 <ul>
   <li>ai-customer-support-chat/</li>
+  <li>├── backend/</li>
+  <li>│   ├── config/</li>
+  <li>│   │   ├── db.js </li>
+  <li>│   │   ├── cloudinary.js</li>
+  <li>│   ├── controllers/</li>
+  <li>│   │   ├── chatController.js</li>
+  <li>│   │   ├── faqController.js</li>
+  <li>│   ├── models/</li>
+  <li>│   │   ├── Conversation.js</li>
+  <li>│   │   ├── Faq.js</li>
+  <li>│   ├── routes</li>
+  <li>│   │   ├── chatRoutes.js</li>
+  <li>│   ├── services/</li>
+  <li>│   │   ├── aiService.js</li>
+  <li>│   ├── index.js</li>
+  <li>│   ├── package.json</li>
+  <li>│   ├── .env</li>
+  <li>├── frontend/</li>
+  <li>│   ├── src/</li>
+  <li>│   │   ├── components/</li>
+  <li>│   │   │   ├── ChatInterface.jsx</li>
+  <li>│   │   │   ├── AdminUpload.jsx</li>
+  <li>│   │   ├── App.jsx</li>
+  <li>│   ├── package.json</li>
+  <li>│   ├── .env</li>
+  <li>├── README.md</li>
 </ul>
-├── backend/
-│   ├── config/
-│   │   ├── db.js
-│   │   ├── cloudinary.js
-│   ├── controllers/
-│   │   ├── chatController.js
-│   │   ├── faqController.js
-│   ├── models/
-│   │   ├── Conversation.js
-│   │   ├── Faq.js
-│   ├── routes/
-│   │   ├── chatRoutes.js
-│   ├── services/
-│   │   ├── aiService.js
-│   ├── index.js
-│   ├── package.json
-│   ├── .env
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ChatInterface.jsx
-│   │   │   ├── AdminUpload.jsx
-│   │   ├── App.jsx
-│   ├── package.json
-│   ├── .env
-├── README.md
-</p>
 
 Notes
 
